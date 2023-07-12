@@ -1,0 +1,14 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "Entrega 1.1 del Sprint 1. Curso NodeJS ITAcademy",
+  "main": "./src/index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Gina Rico",
+  "license": "ISC",
+  "dependencies": {
+    "through2-map": "^3.0.0"
+  }
+}
