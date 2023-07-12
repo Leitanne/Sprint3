@@ -4,7 +4,6 @@ const process = require('process');
 
 
 const server = http.createServer((req, res) => {
-    console.log('inside server');
     let parsedURL = new URL(req.url, 'http://example.com');
     let date = new Date(parsedURL.searchParams.get('iso'));
     let time = {
@@ -17,7 +16,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'application/json'});
         res.end(JSON.stringify(time));
     } else if (/^\/api\/unixtime/.test(req.url)) {
-        res.end(date.getTime());
+        res.end(`{\"unixtime\":`+date.getTime().toString()+`}`);
     }
 });
 

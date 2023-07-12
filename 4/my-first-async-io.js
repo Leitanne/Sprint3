@@ -2,7 +2,6 @@ const fs = require('fs');
 const process = require('node:process');
 
 let input = process.argv[2];
-let fileContents;
 
 fs.readFile(input, 'utf-8', (error, data) => {
     if(error == null){

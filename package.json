@@ -4,7 +4,20 @@
   "description": "Entrega 1.1 del Sprint 1. Curso NodeJS ITAcademy",
   "main": "./src/index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "helloworld": "node ./1/hello-world.js",
+    "suma": "node ./2/baby-steps.js",
+    "iosync": "node ./3/my-first-io.js ./test.txt",
+    "ioasync": "node ./4/my-first-async-io.js ./test.txt",
+    "ls": "node ./5/filtered-ls.js",
+    "lsmodular": "node ./6/make-it-modular.js",
+    "httpclient": "learnyounode run ./7/http-client.js http://localhost:61932",
+    "httpcollect": "learnyounode run ./8/http-collect.js http://localhost:61932",
+    "jugglingasync": "learnyounode run ./9/juggling-async.js http://localhost:63573 http://localhost:63574 http://localhost:63575",
+    "timeserver": "learnyounode run ./10/time-server.js 31880",
+    "fileserver": "learnyounode run ./11/http-file-server.js 61191 ./test.txt",
+    "uppercaserer": "learnyounode run ./12/http-uppercaserer.js 63790",
+    "jsonapi": "learnyounode run ./13/http-json-api-server.js 54088" 
   },
   "author": "Gina Rico",
   "license": "ISC",

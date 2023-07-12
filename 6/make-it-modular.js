@@ -1,4 +1,4 @@
-const filtrarExtensiones = require('./imprimirExtensiones');
+const filtrarExtensiones = require('./mymodule');
 const process = require ('process');
 
 const ls = process.argv[2];
