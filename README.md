@@ -6,10 +6,10 @@
 4. "ioasync" [rutaArchivo]
 5. "ls" [ruta] [extension]
 6. "lsmodular" [ruta] [extension]
-7. "httpclient"
-8. "httpcollect"
-9. "jugglingasync"
-10. "timeserver"
-11. "fileserver"
-12. "uppercaserer"
-13. "jsonapi"
+7. "httpclient" [url]
+8. "httpcollect" [url]
+9. "jugglingasync" [url1] [url2] [url3]
+10. "timeserver" [numeroPuerto]
+11. "fileserver" [numeroPuerto] [rutaFichero]
+12. "uppercaserer" [numeroPuerto]
+13. "jsonapi" [numeroPuerto]

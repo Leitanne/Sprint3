@@ -11,17 +11,20 @@
     "ioasync": "node ./4/my-first-async-io.js ./test.txt",
     "ls": "node ./5/filtered-ls.js",
     "lsmodular": "node ./6/make-it-modular.js",
-    "httpclient": "learnyounode run ./7/http-client.js http://localhost:61932",
-    "httpcollect": "learnyounode run ./8/http-collect.js http://localhost:61932",
-    "jugglingasync": "learnyounode run ./9/juggling-async.js http://localhost:63573 http://localhost:63574 http://localhost:63575",
-    "timeserver": "learnyounode run ./10/time-server.js 31880",
-    "fileserver": "learnyounode run ./11/http-file-server.js 61191 ./test.txt",
-    "uppercaserer": "learnyounode run ./12/http-uppercaserer.js 63790",
-    "jsonapi": "learnyounode run ./13/http-json-api-server.js 54088" 
+    "httpclient": "learnyounode run ./7/http-client.js",
+    "httpcollect": "learnyounode run ./8/http-collect.js",
+    "jugglingasync": "learnyounode run ./9/juggling-async.js",
+    "timeserver": "learnyounode run ./10/time-server.js",
+    "fileserver": "learnyounode run ./11/http-file-server.js",
+    "uppercaserer": "learnyounode run ./12/http-uppercaserer.js",
+    "jsonapi": "learnyounode run ./13/http-json-api-server.js"
   },
   "author": "Gina Rico",
   "license": "ISC",
   "dependencies": {
-    "through2-map": "^3.0.0"
+    "@types/node": "^20.4.1",
+    "through2-map": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
   }
 }

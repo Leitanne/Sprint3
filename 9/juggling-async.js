@@ -1,39 +1,33 @@
-const http = require('http');
-const process = require('process');
-
-let message = "";
-http.get(process.argv[2], (response) => {
+var http = require('http');
+var processInput_ = require('process');
+var message_ = "";
+http.get(processInput_.argv[2], function (response) {
     response.setEncoding('utf-8');
-    response.on('data', (data) => {
-        message += data;
+    response.on('data', function (data) {
+        message_ += data;
     });
-
-    response.on('end', () => {
-        console.log(message);
-        message = "";
-        http.get(process.argv[3], (response) => {
+    response.on('end', function () {
+        console.log(message_);
+        message_ = "";
+        http.get(processInput_.argv[3], function (response) {
             response.setEncoding('utf-8');
-            response.on('data', (data) => {
-                message += data;
+            response.on('data', function (data) {
+                message_ += data;
             });
-                    
-            response.on('end', () => {
-                console.log(message);
-                message = "";
-                http.get(process.argv[4], (response) => {
+            response.on('end', function () {
+                console.log(message_);
+                message_ = "";
+                http.get(processInput_.argv[4], function (response) {
                     response.setEncoding('utf-8');
-                    response.on('data', (data) => {
-                    message += data;
+                    response.on('data', function (data) {
+                        message_ += data;
                     });
-                                
-                    response.on('end', () => {
-                    console.log(message);
-                    message = "";
+                    response.on('end', function () {
+                        console.log(message_);
+                        message_ = "";
                     });
                 });
             });
         });
     });
 });
-
-
