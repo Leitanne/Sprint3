@@ -2,10 +2,10 @@ const processIn = require("process");
 
 let input = processIn.argv;
 
-function sum(args:string[]) : number{
+export function sum(args: string[]) : number{
     let resultado: number = 0;
 
-    for(let i: number =2; i < args.length; i++){
+    for(let i: number = 2; i < args.length; i++){
         resultado += Number(args[i]);
     }
     
