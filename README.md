@@ -1,3 +1,10 @@
+<em> LearnYouNode </em>
+
+Antes de empezar, instala todo con 
+npm install
+
+Todos los ejercicios en javascript han sido validados previamente con learnyounode. Luego se han traducido a una versión en Typescript y se han modificado para poder testearlos mas facilmente (La mayoria simplemente se han añadido dentro de una función para testing).
+
 #CLI
 
 1. "helloworld"
@@ -13,3 +20,7 @@
 11. "fileserver" [numeroPuerto] [rutaFichero]
 12. "uppercaserer" [numeroPuerto]
 13. "jsonapi" [numeroPuerto]
+
+#TEST
+
+npm test
